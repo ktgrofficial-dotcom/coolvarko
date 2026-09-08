@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rólunk – Coolvarko Kft.</title>
+<meta name="description" content="Ismerje meg a Coolvarko Kft. csapatát – tapasztalt építőipari szakvállalkozás, amely a Dunántúlon és a Balaton környékén végzi munkáját.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#1a1a1a;color:#ccc;font-family:Arial,sans-serif;min-height:100vh;}
+
+nav{background:rgba(0,0,0,0.95);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
+nav a.back{color:#7AB800;text-decoration:none;font-size:14px;font-weight:700;letter-spacing:1px;}
+nav a.back:hover{text-decoration:underline;}
+nav a.cta{background:#7AB800;color:#fff;padding:8px 18px;border-radius:4px;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:1px;}
+
+.hero{background:linear-gradient(135deg,#1a1a1a 0%,#2a2a2a 100%);padding:60px 24px 48px;text-align:center;border-bottom:2px solid #7AB800;}
+.hero .label{color:#7AB800;font-size:13px;font-weight:700;letter-spacing:3px;margin-bottom:16px;}
+.hero h1{color:#fff;font-size:clamp(28px,6vw,48px);font-weight:900;line-height:1.2;margin-bottom:16px;}
+.hero p{color:#bbb;font-size:16px;max-width:600px;margin:0 auto;line-height:1.7;}
+
+.container{max-width:800px;margin:0 auto;padding:48px 24px 80px;}
+
+.section{margin-bottom:56px;}
+.section-label{color:#7AB800;font-size:12px;font-weight:700;letter-spacing:3px;margin-bottom:8px;}
+.section h2{color:#fff;font-size:24px;font-weight:800;margin-bottom:20px;}
+.section p{font-size:15px;line-height:1.8;color:#bbb;margin-bottom:14px;}
+
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:40px 0;}
+.stat{background:#242424;border:1px solid #333;border-top:3px solid #7AB800;border-radius:8px;padding:20px;text-align:center;}
+.stat .num{color:#7AB800;font-size:32px;font-weight:900;line-height:1;}
+.stat .desc{color:#999;font-size:12px;margin-top:6px;letter-spacing:1px;}
+
+.team{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0;}
+.team-card{background:#242424;border:1px solid #333;border-radius:10px;padding:24px;}
+.team-card .name{color:#fff;font-size:18px;font-weight:800;margin-bottom:4px;}
+.team-card .role{color:#7AB800;font-size:12px;font-weight:700;letter-spacing:2px;margin-bottom:12px;}
+.team-card p{color:#999;font-size:13px;line-height:1.7;}
+
+.values{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0;}
+.value-item{background:#242424;border-left:3px solid #7AB800;border-radius:0 8px 8px 0;padding:16px 20px;}
+.value-item .title{color:#fff;font-size:14px;font-weight:700;margin-bottom:4px;}
+.value-item p{color:#999;font-size:13px;line-height:1.6;}
+
+.process{display:flex;flex-direction:column;gap:0;margin:24px 0;}
+.process-step{display:flex;gap:20px;padding:20px 0;border-bottom:1px solid #2a2a2a;}
+.process-step:last-child{border-bottom:none;}
+.step-num{color:#7AB800;font-size:28px;font-weight:900;min-width:40px;line-height:1;}
+.step-content .title{color:#fff;font-size:15px;font-weight:700;margin-bottom:4px;}
+.step-content p{color:#999;font-size:13px;line-height:1.6;}
+
+.guarantee{background:#242424;border:1px solid #333;border-radius:10px;padding:28px;margin:24px 0;display:flex;gap:20px;align-items:flex-start;}
+.guarantee .icon{font-size:36px;flex-shrink:0;}
+.guarantee h3{color:#fff;font-size:17px;font-weight:700;margin-bottom:8px;}
+.guarantee p{color:#999;font-size:14px;line-height:1.7;}
+
+.cta-box{background:linear-gradient(135deg,#242424,#1e1e1e);border:1px solid #7AB800;border-radius:12px;padding:32px;text-align:center;margin-top:48px;}
+.cta-box h3{color:#fff;font-size:22px;font-weight:800;margin-bottom:10px;}
+.cta-box p{color:#bbb;font-size:14px;margin-bottom:24px;}
+.cta-box a{background:#7AB800;color:#fff;padding:14px 32px;border-radius:6px;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:1px;display:inline-block;}
+
+@media(max-width:600px){
+  .stats{grid-template-columns:1fr;max-width:280px;margin-left:auto;margin-right:auto;}
+  .team{grid-template-columns:1fr;}
+  .values{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="back" href="index.html">← Főoldal</a>
+  <div style="display:flex;gap:16px;align-items:center;">
+    <a href="rolunk.html" style="color:#ccc;text-decoration:none;font-size:13px;font-weight:600;">Rólunk</a>
+    <a href="gyik.html" style="color:#ccc;text-decoration:none;font-size:13px;font-weight:600;">GYIK</a>
+    <a class="cta" href="index.html#contact">Árajánlat kérés</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="label">RÓLUNK</div>
+  <h1>Emberek, akik értik<br>a szakmát.</h1>
+  <p>A Coolvarko Kft. mögött egy tapasztalt, összetartó csapat áll – akik nem csak munkát végeznek, hanem felelősséget is vállalnak érte.</p>
+</div>
+
+<div class="container">
+
+  <!-- Statisztikák -->
+  <div class="stats">
+    <div class="stat">
+      <div class="num">15+</div>
+      <div class="desc">SZAKEMBER</div>
+    </div>
+    <div class="stat">
+      <div class="num">3 év</div>
+      <div class="desc">GARANCIA</div>
+    </div>
+    <div class="stat">
+      <div class="num">10+</div>
+      <div class="desc">ÉV TAPASZTALAT</div>
+    </div>
+  </div>
+
+  <!-- A csapat -->
+  <div class="section">
+    <div class="section-label">A CSAPATRÓL</div>
+    <h2>Kik vagyunk?</h2>
+    <p>Csapatunk tagjai több mint 10 éve dolgoznak az építőiparban – 2026-ban hoztuk létre azt a csapatot, amivel ma dolgozunk, a Coolvarko Kft. keretében.</p>
+    <p>15 főből álló, jól összeszokott szakembercsapat végzi a munkát – mindenki ismeri egymást, ismeri a szakmát, és tudja mit várnak el tőle. Nem küldünk ismeretleneket a megrendelőhöz.</p>
+    <p>Elsősorban a Dunántúlon és a Balaton környékén dolgozunk, de szükség esetén az ország más területein is vállalunk munkát.</p>
+  </div>
+
+  <!-- Ügyvezetők -->
+  <div class="section">
+    <div class="section-label">VEZETŐSÉG</div>
+    <h2>Az ügyvezetők</h2>
+    <div class="team">
+      <div class="team-card">
+        <div class="name">Kovács Tamás</div>
+        <div class="role">ÜGYVEZETŐ</div>
+        <p>Hegesztő és lakatos képzettségű szakember, aki több éven keresztül vezető szerepet töltött be külföldi fémipari cégnél. Az építőipart belülről ismeri – munkásként és vezetőként egyaránt. Elsősorban az ügyfélkapcsolatokat koordinálja.</p>
+      </div>
+      <div class="team-card">
+        <div class="name">Ganesz Richárd</div>
+        <div class="role">ÜGYVEZETŐ</div>
+        <p>Hegesztő és lakatos képzettség mellett korábban magyarországi csarnoképítő vállalkozást is vezetett. Külföldi tapasztalattal és széleskörű szakmai múlttal rendelkezik. A feladatok a két ügyvezető között rugalmasan oszlanak meg.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Értékeink -->
+  <div class="section">
+    <div class="section-label">ÉRTÉKEINK</div>
+    <h2>Ami megkülönböztet minket</h2>
+    <div class="values">
+      <div class="value-item">
+        <div class="title">Saját, megbecsült csapat</div>
+        <p>Saját, jól összeszokott csapatunk végzi a munkát. Nagyobb projekteknél megbízható alvállalkozói körrel is rendelkezünk.</p>
+      </div>
+      <div class="value-item">
+        <div class="title">Rugalmasság</div>
+        <p>Kis munkáktól a komplex kivitelezésig – alkalmazkodunk a megrendelő igényeihez.</p>
+      </div>
+      <div class="value-item">
+        <div class="title">Átlátható árazás</div>
+        <p>Részletes árajánlat, rejtett költségek nélkül. Amit megbeszélünk, azt tartjuk.</p>
+      </div>
+      <div class="value-item">
+        <div class="title">Felelősségvállalás</div>
+        <p>Emberek vagyunk, hibázhatunk – de vállaljuk a felelősséget és kijavítjuk.</p>
+      </div>
+      <div class="value-item">
+        <div class="title">Maximalizmus</div>
+        <p>Tapasztalt, maximalista mesterek végzik a munkát. A minőség nem alku kérdése.</p>
+      </div>
+      <div class="value-item">
+        <div class="title">Megrendelő elégedettsége</div>
+        <p>A munka akkor ér véget, amikor a megrendelő elégedetten veszi át.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Munkafolyamat -->
+  <div class="section">
+    <div class="section-label">HOGYAN DOLGOZUNK</div>
+    <h2>A munkafolyamat</h2>
+    <div class="process">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <div class="title">Felmérés és egyeztetés</div>
+          <p>Megismerjük az igényeket, felmérjük a helyszínt, és pontosan megértjük, mit vár el tőlünk a megrendelő.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <div class="title">Részletes árajánlat</div>
+          <p>Tételes, átlátható árajánlatot adunk – rejtett költségek nélkül.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <div class="title">Szerződéskötés</div>
+          <p>Írásos szerződésben rögzítjük a feltételeket, határidőket és a vállalt munkát.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <div class="title">Kivitelezés</div>
+          <p>A munkát saját, tapasztalt csapatunk végzi. Ha közben bármi változik, egyeztetünk és alkalmazkodunk az igényekhez.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">05</div>
+        <div class="step-content">
+          <div class="title">Átadás</div>
+          <p>Az elvégzett munkát közösen átnézzük, és csak akkor zárjuk le a projektet, ha minden a megbeszéltek szerint elkészült. Az átadás garanciával zárul.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Garancia -->
+  <div class="section">
+    <div class="section-label">GARANCIA</div>
+    <h2>Amire számíthat</h2>
+    <div class="guarantee">
+      <div class="icon">🛡️</div>
+      <div>
+        <h3>3 év garancia az elvégzett munkákra</h3>
+        <p>Minden elvégzett munkánkra 3 év garanciát vállalunk. Rendelkezünk felelősségbiztosítással. Emberek vagyunk – ha valami nem a várt módon alakul, vállaljuk a felelősséget és gondoskodunk a megoldásról.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-box">
+    <h3>Kis és nagy munkát egyaránt vállalunk –<br>számíthat ránk.</h3>
+    <p>Kérjen ingyenes árajánlatot, kötelezettség nélkül.</p>
+    <a href="index.html#kapcsolat">ÁRAJÁNLAT KÉRÉSE →</a>
+  </div>
+
+</div>
+<footer style="background:#111;border-top:1px solid #2a2a2a;padding:24px;text-align:center;margin-top:40px;">
+  <p style="color:#666;font-size:12px;margin-bottom:10px;">© 2026 Coolvarko Kft. Minden jog fenntartva.</p>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;font-size:12px;">
+    <a href="rolunk.html" style="color:#7AB800;text-decoration:none;">Rólunk</a>
+    <span style="color:#444;">·</span>
+    <a href="gyik.html" style="color:#7AB800;text-decoration:none;">GYIK</a>
+    <span style="color:#444;">·</span>
+    <a href="impresszum.html" style="color:#7AB800;text-decoration:none;">Impresszum</a>
+    <span style="color:#444;">·</span>
+    <a href="adatkezelesi-tajekoztato.html" style="color:#7AB800;text-decoration:none;">Adatkezelési tájékoztató</a>
+  </div>
+</footer>
+
+<!-- WHATSAPP GOMB -->
+<div id="wa-widget" style="position:fixed;bottom:24px;right:20px;z-index:8000;display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+  <div id="wa-options" style="display:none;flex-direction:column;gap:8px;align-items:flex-end;">
+    <a href="https://wa.me/36706377224" target="_blank" style="display:flex;align-items:center;gap:10px;background:#1a1a1a;border:1px solid #25D366;border-radius:50px;padding:10px 16px;text-decoration:none;box-shadow:0 2px 12px rgba(0,0,0,0.4);">
+      <span style="color:#fff;font-size:13px;font-weight:700;">Kovács Tamás</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.118 1.528 5.845L.057 23.885l6.23-1.635A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.027-1.384l-.36-.214-3.732.979.995-3.641-.235-.374A9.818 9.818 0 1112 21.818z"/></svg>
+    </a>
+    <a href="https://wa.me/36204398509" target="_blank" style="display:flex;align-items:center;gap:10px;background:#1a1a1a;border:1px solid #25D366;border-radius:50px;padding:10px 16px;text-decoration:none;box-shadow:0 2px 12px rgba(0,0,0,0.4);">
+      <span style="color:#fff;font-size:13px;font-weight:700;">Ganesz Richárd</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.118 1.528 5.845L.057 23.885l6.23-1.635A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.027-1.384l-.36-.214-3.732.979.995-3.641-.235-.374A9.818 9.818 0 1112 21.818z"/></svg>
+    </a>
+  </div>
+  <button onclick="document.getElementById('wa-options').style.display=document.getElementById('wa-options').style.display==='flex'?'none':'flex'" style="width:56px;height:56px;border-radius:50%;background:#25D366;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,0.4);">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.118 1.528 5.845L.057 23.885l6.23-1.635A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.027-1.384l-.36-.214-3.732.979.995-3.641-.235-.374A9.818 9.818 0 1112 21.818z"/></svg>
+  </button>
+</div>
+</body>
+</html>
